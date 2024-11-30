@@ -18,11 +18,12 @@ import axios from "axios";
     )
   }
   //api Var
+  const APIKEY1='0e084ae869546d77df7f07374192eafe';
   const APIKEY='34480b98aa332da53123a0ac63a4ea9d';
   let lat=city&&city.lat?city.lat:'';
   let long=city&&city.lng?city.lng:'';
   let exclude='hourly,minutely';
-  const URL= `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=${exclude}&units=metric&lang=tr&appid=${APIKEY}`;
+  const URL= `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=${exclude}&units=metric&lang=tr&appid=${APIKEY1}`;
     
   const fetchData=()=>
   {
